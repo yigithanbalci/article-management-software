@@ -6,3 +6,15 @@ spring:
     password: password
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+    console.path: /h2-console
+    spring.h2.console.settings.web-allow-others: false
+
+servlet:
+  multipart:
+    max-file-size: 5MB
+    enabled: true
+
+server:
+  port: 9092
